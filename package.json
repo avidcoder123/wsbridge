@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "name": "wsbridge",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "https://github.com/avidcoder123/wsbridge.git",
+  "author": "avidcoder123 <umar.tli.edu@gmail.com>",
+  "license": "GNU v3",
+  "private": false,
+  "scripts": {
+    "dev": "tsc index.ts --outDir build && node build/index.js"
+  }
+}
