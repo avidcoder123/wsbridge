@@ -10,6 +10,11 @@
   "license": "GNU v3",
   "private": false,
   "scripts": {
-    "dev": "tsc index.ts --outDir build && node build/index.js"
+    "dev": "tsc && node build/index.js",
+    "ex": "tsc && node build/index.js & node example/index.js"
+  },
+  "dependencies": {
+    "@types/ws": "^8.5.7",
+    "ws": "^8.14.2"
   }
 }

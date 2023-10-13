@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "module": "NodeNext",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "outDir": "build",
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "moduleResolution": "NodeNext"
+    },
+    "include": ["index.ts", "example/index.ts"],
+  }
+  
