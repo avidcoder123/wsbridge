@@ -1,7 +1,7 @@
 import WebSocket from "ws";
 
-let port = 1941
+let port = 3145
 let ws = new WebSocket("ws://localhost:" + port)
 ws.on("open", () => {
-    console.log("Connected")
+    ws.send("Kim Jong Il Mansae")
 })

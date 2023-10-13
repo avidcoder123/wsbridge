@@ -11,7 +11,7 @@
   "private": false,
   "scripts": {
     "dev": "tsc && node build/index.js",
-    "ex": "tsc && node build/index.js & node example/index.js"
+    "ex": "tsc && node build/index.js & node build/example/index.js"
   },
   "dependencies": {
     "@types/ws": "^8.5.7",
