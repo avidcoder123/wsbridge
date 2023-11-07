@@ -1,9 +1,18 @@
 import WebSocket from "ws";
 
-let port = 3145
-let ws = new WebSocket("ws://localhost:" + port)
+setTimeout(main, 2000)
 
-//TODO: FInd why this is not working
-ws.on("open", () => {
-    ws.send("Kim Jong Il Mansae")
-})
+function main() {
+    console.log("Running client...")
+    let port = 3333
+    let ws = new WebSocket("ws://127.0.0.1:" + port)
+    
+    //TODO: Find why this is not working
+    ws.on("open", () => {
+        ws.send("Hello world")
+    })
+
+    ws.on("message", msg => {
+        console.log(msg)
+    })
+}
